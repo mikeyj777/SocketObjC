@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface ViewController : UIViewController
+
+NSInputStream *inputStream;
+NSOutputStream *outputStream;
+
+@interface ViewController : UIViewController <NSStreamDelegate>
+
+- (IBAction)btnPressed:(UIButton *)sender;
+
 
 
 @end

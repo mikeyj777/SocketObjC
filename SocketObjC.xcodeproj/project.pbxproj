@@ -13,6 +13,8 @@
 		634E31381D611B1900A54AB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634E31361D611B1900A54AB1 /* Main.storyboard */; };
 		634E313A1D611B1900A54AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634E31391D611B1900A54AB1 /* Assets.xcassets */; };
 		634E313D1D611B1900A54AB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634E313B1D611B1900A54AB1 /* LaunchScreen.storyboard */; };
+		634E31461D613B7500A54AB1 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 634E31451D613B7500A54AB1 /* MyButton.m */; };
+		63D286491D6166CE007857DE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D286481D6166CE007857DE /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		634E31391D611B1900A54AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		634E313C1D611B1900A54AB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		634E313E1D611B1900A54AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634E31441D613B7500A54AB1 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		634E31451D613B7500A54AB1 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+		63D286481D6166CE007857DE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D286491D6166CE007857DE /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 		634E31211D611B1700A54AB1 = {
 			isa = PBXGroup;
 			children = (
+				63D286481D6166CE007857DE /* MediaPlayer.framework */,
 				634E312C1D611B1900A54AB1 /* SocketObjC */,
 				634E312B1D611B1700A54AB1 /* Products */,
 			);
@@ -67,6 +74,8 @@
 				634E313B1D611B1900A54AB1 /* LaunchScreen.storyboard */,
 				634E313E1D611B1900A54AB1 /* Info.plist */,
 				634E312D1D611B1900A54AB1 /* Supporting Files */,
+				634E31441D613B7500A54AB1 /* MyButton.h */,
+				634E31451D613B7500A54AB1 /* MyButton.m */,
 			);
 			path = SocketObjC;
 			sourceTree = "<group>";
@@ -153,6 +162,7 @@
 				634E31351D611B1900A54AB1 /* ViewController.m in Sources */,
 				634E31321D611B1900A54AB1 /* AppDelegate.m in Sources */,
 				634E312F1D611B1900A54AB1 /* main.m in Sources */,
+				634E31461D613B7500A54AB1 /* MyButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +313,7 @@
 				634E31431D611B1900A54AB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
