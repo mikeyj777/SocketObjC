@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <SystemConfiguration/CaptiveNetwork.h>
+#import "Reachability.h"
 
 
 NSInputStream *inputStream;
 NSOutputStream *outputStream;
+NSTimer *timer;
 
 @interface ViewController : UIViewController <NSStreamDelegate>
 

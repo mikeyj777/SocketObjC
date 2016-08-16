@@ -98,7 +98,7 @@
                                             <constraint firstAttribute="height" constant="80" id="lnZ-QO-Bk6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                                        <state key="normal" title="Chrome Cast"/>
+                                        <state key="normal" title="ChromeCast"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
                                                 <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
