@@ -114,11 +114,10 @@
     
 }
 
-- (IBAction)btnPressed:(UIButton *)sender
+-(void)volHeld
 {
     NSString *tcpString;
-    
-    switch (sender.tag)
+    switch (btnTag)
     {
         case 0:
             //vol +
@@ -128,6 +127,45 @@
         case 1:
             //vol -
             tcpString = @"MVDOWN";
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self tcpCallwithcommand:tcpString];
+}
+
+-(IBAction)btnHeld:(UIButton *)sender
+{
+    btnTag = sender.tag;
+    volTimer =
+        [NSTimer
+         scheduledTimerWithTimeInterval:0.1
+         target:self
+         selector:@selector(volHeld)
+         userInfo:nil
+         repeats:YES];
+}
+
+- (IBAction)btnPressed:(UIButton *)sender
+{
+    NSString *tcpString;
+    
+    switch (sender.tag)
+    {
+        case 0:
+            //vol +
+            tcpString = @"MVUP";
+            [volTimer invalidate];
+            volTimer = nil;
+            break;
+            
+        case 1:
+            //vol -
+            tcpString = @"MVDOWN";
+            [volTimer invalidate];
+            volTimer = nil;
             break;
             
         case 2:

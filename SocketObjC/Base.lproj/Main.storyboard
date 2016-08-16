@@ -45,6 +45,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="btnHeld:" destination="BYZ-38-t0r" eventType="touchDown" id="gZB-8D-l6Y"/>
                                             <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l2Z-Kf-dVC"/>
                                         </connections>
                                     </button>
@@ -62,6 +63,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="btnHeld:" destination="BYZ-38-t0r" eventType="touchDown" id="TWa-LG-Khe"/>
                                             <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LcF-Mo-Hpz"/>
                                         </connections>
                                     </button>

@@ -16,11 +16,14 @@
 NSInputStream *inputStream;
 NSOutputStream *outputStream;
 NSTimer *timer;
+NSTimer *volTimer;
+
+NSInteger btnTag;
 
 @interface ViewController : UIViewController <NSStreamDelegate>
 
 - (IBAction)btnPressed:(UIButton *)sender;
-
+- (IBAction)btnHeld:(UIButton *)sender;
 
 
 @end
